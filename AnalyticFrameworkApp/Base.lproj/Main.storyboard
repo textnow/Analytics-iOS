@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnalyticFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24W-zK-KR9">
+                                <rect key="frame" x="184" y="353" width="46" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVm-r6-32t"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cc0-Wj-ds2">
+                                <rect key="frame" x="182.66666666666666" y="428" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="bPY-Oy-xcc"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gwa-XN-7hp">
+                                <rect key="frame" x="116" y="504" width="182" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zra-wl-ZTW"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dEO-RI-WaX">
+                                <rect key="frame" x="48" y="278" width="318" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="MTV-vu-RWD"/>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c88-MW-qhS"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-ga-aly">
+                                <rect key="frame" x="154.66666666666666" y="203" width="104.99999999999997" height="30"/>
+                                <state key="normal" title="Track all values"/>
+                                <connections>
+                                    <action selector="trackAllValues" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVF-90-Puq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dEO-RI-WaX" firstAttribute="top" secondItem="TMr-ga-aly" secondAttribute="bottom" constant="45" id="0F6-OE-wAr"/>
+                            <constraint firstItem="Cc0-Wj-ds2" firstAttribute="top" secondItem="24W-zK-KR9" secondAttribute="bottom" constant="45" id="66N-wY-NF5"/>
+                            <constraint firstItem="24W-zK-KR9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="816-J0-OpD"/>
+                            <constraint firstItem="Cc0-Wj-ds2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Uu-fN-7BP"/>
+                            <constraint firstItem="24W-zK-KR9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IJA-M8-2QV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dEO-RI-WaX" secondAttribute="trailing" constant="50" id="MD5-5X-WaI"/>
+                            <constraint firstItem="dEO-RI-WaX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OwA-vo-OZY"/>
+                            <constraint firstItem="TMr-ga-aly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cvo-pC-Gm3"/>
+                            <constraint firstItem="dEO-RI-WaX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j2u-b4-NwY"/>
+                            <constraint firstItem="gwa-XN-7hp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q5d-2N-0AX"/>
+                            <constraint firstItem="gwa-XN-7hp" firstAttribute="top" secondItem="Cc0-Wj-ds2" secondAttribute="bottom" constant="45" id="q9T-uU-e04"/>
+                            <constraint firstItem="24W-zK-KR9" firstAttribute="top" secondItem="dEO-RI-WaX" secondAttribute="bottom" constant="45" id="uQb-fc-FkL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="segments" destination="gwa-XN-7hp" id="sKU-S2-DGD"/>
+                        <outlet property="slider" destination="dEO-RI-WaX" id="Nd4-h8-IHy"/>
+                        <outlet property="toggle" destination="Cc0-Wj-ds2" id="Rhd-cv-oWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

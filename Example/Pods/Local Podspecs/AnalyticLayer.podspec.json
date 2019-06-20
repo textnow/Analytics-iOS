@@ -1,0 +1,22 @@
+{
+  "name": "AnalyticLayer",
+  "version": "0.1.0",
+  "summary": "A short description of AnalyticLayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Quinton/AnalyticLayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Quinton": "quintonpryce@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Quinton/AnalyticLayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AnalyticLayer/Classes/**/*"
+}

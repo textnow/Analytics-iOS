@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'AnalyticLayer_Example' do
+  pod 'AnalyticLayer', :path => '../'
+
+  target 'AnalyticLayer_Tests' do
+    inherit! :search_paths
+
+  end
+end

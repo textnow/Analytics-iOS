@@ -1,0 +1,16 @@
+PODS:
+  - AnalyticLayer (0.1.0)
+
+DEPENDENCIES:
+  - AnalyticLayer (from `../`)
+
+EXTERNAL SOURCES:
+  AnalyticLayer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AnalyticLayer: 65b2e32c4cc6990c4dfe403214e5a4cd64e6a868
+
+PODFILE CHECKSUM: 30846303b04557c478bf1769e11029a220a18ab4
+
+COCOAPODS: 1.4.0

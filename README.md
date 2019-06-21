@@ -8,13 +8,13 @@
 
 ## Features
 
-✅  Event trackers wrapping any number of analytic tools
+✅  Event trackers wrapping any number of analytic tools.
 
-✅  Analytic events that are responsible for knowing the target tool(s) to track to
+✅  Analytic events that are responsible for knowing the target tool(s) to track to.
 
-✅  Analytic parameter types that are client defined to conform to any analytic tool
+✅  Analytic parameter types that are client defined to conform to any analytic tool.
 
-✅  Testable and mockable analytic core
+✅  Testable and mockable analytic core.
 
 ## Installation
 ### CocoaPods
@@ -25,6 +25,8 @@
 pod 'AnalyticLayer'
 ```
 
+## Usage and Implementation
+Please see the Wiki page [Usage and Implementation](https://github.com/textnow/Analytics-iOS/wiki/Usage-and-Implementation).
 
 ## More Information
 ### The Talk

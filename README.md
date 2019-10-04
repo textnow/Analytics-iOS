@@ -29,8 +29,8 @@ pod 'AnalyticLayer'
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate Alamofire into your Xcode project using Carthage, specify it in your `Cartfile`:
 
-```ogdl
-github "Enflick/"
+```
+github "textnow/Analytics-iOS"
 ```
 
 ## Usage and Implementation
@@ -38,9 +38,9 @@ Please see the Wiki page [Usage and Implementation](https://github.com/textnow/A
 
 ## More Information
 ### The Talk
-I have given a talk on the building of this framework and the background of how TextNow uses this framework. At the time of this video the framework was not released and has gone through some change since but much of the structure and usage still remains the same to date. Please feel free to check the video out. 
+I have given a talk on the building of this framework and the background of how TextNow uses this framework. At the time of this video the framework was not released and has gone through some change since but much of the structure and usage still remains the same to date. Please feel free to check the video out.
 
-[Building an Analytic Framework Video](https://www.youtube.com/watch?v=fjqnoQY72AU&feature=youtu.be) 
+[Building an Analytic Framework Video](https://www.youtube.com/watch?v=fjqnoQY72AU&feature=youtu.be)
 ### Communication
 
 1. If you have used this and extended it please create a pull request with your changes.
